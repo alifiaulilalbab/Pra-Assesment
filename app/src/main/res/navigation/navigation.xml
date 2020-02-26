@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.d3if4201.praassesment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_persegipanjang"
+            app:destination="@id/persegipanjang" />
+        <action
+            android:id="@+id/action_mainFragment_to_segitiga"
+            app:destination="@id/segitiga" />
+        <action
+            android:id="@+id/action_mainFragment_to_about2"
+            app:destination="@id/about2" />
+    </fragment>
+    <fragment
+        android:id="@+id/persegipanjang"
+        android:name="com.d3if4201.praassesment.Persegipanjang"
+        android:label="Persegipanjang" />
+    <fragment
+        android:id="@+id/segitiga"
+        android:name="com.d3if4201.praassesment.Segitiga"
+        android:label="Segitiga" />
+    <fragment
+        android:id="@+id/about2"
+        android:name="com.d3if4201.praassesment.About"
+        android:label="About" />
+</navigation>
